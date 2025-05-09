@@ -80,6 +80,8 @@ target_link_libraries(plugins PUBLIC rapidjson spdlog flutter)
 # Plugins
 PLUGIN_OPTION(common "Includes Common Plugin" ON)
 
+PLUGIN_OPTION(carverx5_cnc "Include Carver X5 CNC plugin" ON)
+
 PLUGIN_OPTION(audioplayers_linux "Include Audioplayers Linux plugin" OFF)
 
 PLUGIN_OPTION(camera "Include Camera plugin" OFF)

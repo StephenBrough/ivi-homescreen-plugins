@@ -22,6 +22,11 @@
 #include "common/common.h"
 #endif
 
+#cmakedefine01 ENABLE_PLUGIN_CARVERX5_CNC
+#if ENABLE_PLUGIN_CARVERX5_CNC
+#include "carverx5_cnc/include/carverx5_cnc/carverx5_cnc_plugin_c_api.h"
+#endif
+
 #cmakedefine01 ENABLE_PLUGIN_AUDIOPLAYERS_LINUX
 #if ENABLE_PLUGIN_AUDIOPLAYERS_LINUX
 #include "audioplayers_linux/include/audioplayers_linux/audioplayers_linux_plugin_c_api.h"

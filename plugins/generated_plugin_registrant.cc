@@ -35,6 +35,10 @@ void PluginsApiRegisterPlugins(FlutterDesktopEngineRef engine) {
   AudioPlayersLinuxPluginCApiRegisterWithRegistrar(
       FlutterDesktopGetPluginRegistrar(engine, ""));
 #endif
+#if ENABLE_PLUGIN_CARVERX5_CNC
+  CarverX5CncPluginCApiRegisterWithRegistrar(
+      FlutterDesktopGetPluginRegistrar(engine, ""));
+#endif
 #if ENABLE_PLUGIN_SECURE_STORAGE
   SecureStoragePluginCApiRegisterWithRegistrar(
       FlutterDesktopGetPluginRegistrar(engine, ""));
